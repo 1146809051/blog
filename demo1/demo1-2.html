@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JavaScript核心知识(面试题) | 博客demo</title>
+    <meta name="description" content="博客demo描述">
+    <link rel="icon" href="/blog/favicon.ico">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.0614ac14.css" as="style"><link rel="preload" href="/blog/assets/js/app.66251581.js" as="script"><link rel="preload" href="/blog/assets/js/2.67ff77f8.js" as="script"><link rel="preload" href="/blog/assets/js/7.0ae978ca.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.9b662014.js"><link rel="prefetch" href="/blog/assets/js/11.e5d61e73.js"><link rel="prefetch" href="/blog/assets/js/12.08b81b25.js"><link rel="prefetch" href="/blog/assets/js/13.8019d131.js"><link rel="prefetch" href="/blog/assets/js/14.fd5339bb.js"><link rel="prefetch" href="/blog/assets/js/15.726ad3bc.js"><link rel="prefetch" href="/blog/assets/js/16.cf68d57e.js"><link rel="prefetch" href="/blog/assets/js/17.10baef62.js"><link rel="prefetch" href="/blog/assets/js/18.a9295156.js"><link rel="prefetch" href="/blog/assets/js/19.4dc91dcb.js"><link rel="prefetch" href="/blog/assets/js/20.52aff58f.js"><link rel="prefetch" href="/blog/assets/js/21.d13fc0e3.js"><link rel="prefetch" href="/blog/assets/js/22.72dd2838.js"><link rel="prefetch" href="/blog/assets/js/23.e5b5448a.js"><link rel="prefetch" href="/blog/assets/js/24.87ce327e.js"><link rel="prefetch" href="/blog/assets/js/25.46caaa54.js"><link rel="prefetch" href="/blog/assets/js/26.15891507.js"><link rel="prefetch" href="/blog/assets/js/27.e55ee11d.js"><link rel="prefetch" href="/blog/assets/js/28.91f471e1.js"><link rel="prefetch" href="/blog/assets/js/29.fc137644.js"><link rel="prefetch" href="/blog/assets/js/3.181d06a7.js"><link rel="prefetch" href="/blog/assets/js/30.de7e44a2.js"><link rel="prefetch" href="/blog/assets/js/31.87e03a7c.js"><link rel="prefetch" href="/blog/assets/js/4.5712530c.js"><link rel="prefetch" href="/blog/assets/js/5.4ef49390.js"><link rel="prefetch" href="/blog/assets/js/6.4a4d4a28.js"><link rel="prefetch" href="/blog/assets/js/8.bc688724.js"><link rel="prefetch" href="/blog/assets/js/9.a909e59c.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.0614ac14.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">博客demo</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">Home</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="链接" class="dropdown-title"><span class="title">链接</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/test1/" class="nav-link">test1</a></li><li class="dropdown-item"><!----> <a href="https://www.baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  链接2
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div><div class="nav-item"><a href="/blog/test2/" class="nav-link">test2</a></div> <a href="https://github.com/zmx2321/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">Home</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="链接" class="dropdown-title"><span class="title">链接</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/test1/" class="nav-link">test1</a></li><li class="dropdown-item"><!----> <a href="https://www.baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  链接2
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div><div class="nav-item"><a href="/blog/test2/" class="nav-link">test2</a></div> <a href="https://github.com/zmx2321/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="javascript核心知识-面试题"><a href="#javascript核心知识-面试题" class="header-anchor">#</a> JavaScript核心知识(面试题)</h1> <blockquote><h3 id="_1-请写出弹出值，并解释为什么？"><a href="#_1-请写出弹出值，并解释为什么？" class="header-anchor">#</a> 1. 请写出弹出值，并解释为什么？</h3></blockquote> <p><strong><font color="#666">原题：</font></strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>alert(a);
+a();
+
+var a = 3;
+function a() {
+    alert(10);
+}
+alert(a);
+a = 6;
+a();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p><strong><font color="#666">考点：</font></strong></p> <blockquote><p>变量提升、函数提升</p></blockquote> <p><strong><font color="#666">答案：</font></strong></p> <blockquote><ol><li>第一次输出：<br>
+function a() {
+alert(10);
+}</li> <li>第二次输出：<br>
+10</li> <li>第三次输出：<br>
+3</li> <li>第四次输出：<br>
+a is not a function</li></ol></blockquote> <p><strong><font color="#666">解析：</font></strong> <br>
+其变形为：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 函数提升
+function a() {  // a =&gt; f
+    alert(10);
+}
+
+// 变量提升
+var a;  // undefind(被忽略)
+
+alert(a);  // 第一个输出是函数体 =&gt; f(a)
+a();  // 执行a方法，第二个输出是10
+
+a = 3;
+
+alert(a);  // 上面a被赋值，第三个输出是3
+a = 6;
+a();  // 函数被提升之后被赋值了，所以此时不存在f(a)，第四次输出a is not a function
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><p><strong><font color="#f00">变量和函数提升注意事项：</font></strong></p> <ul><li>变量提升</li> <li>函数提升
+<ul><li>函数调用不论在哪里都可以执行函数</li> <li>函数优先于变量提升</li></ul></li></ul> <p><strong><font color="#666">扩展：</font></strong></p> <blockquote><h4 id="_1-1-示例："><a href="#_1-1-示例：" class="header-anchor">#</a> <font color="#8BB0D2">1-1 示例：</font></h4> <h4 id="变量提升"><a href="#变量提升" class="header-anchor">#</a> 变量提升</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>if (false) {
+    var a = 1;
+}
+
+console.log(a);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>undefind</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+这里存在变量提升，其变形是：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var a;  // 变量被提升到上面
+if (false) {
+    a = 1;
+}
+
+console.log(a);  // undefind
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><blockquote><h4 id="_1-2-示例："><a href="#_1-2-示例：" class="header-anchor">#</a> <font color="#8BB0D2">1-2 示例：</font></h4> <h4 id="变量提升-2"><a href="#变量提升-2" class="header-anchor">#</a> 变量提升</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>alert(a);
+a();
+
+var a = 3;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>undefind</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+这里存在变量提升，其变形是：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var a;  // 变量被提升到上面
+alert(a);
+a();  // undefind
+
+a = 3;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><blockquote><h4 id="_1-3-示例："><a href="#_1-3-示例：" class="header-anchor">#</a> <font color="#8BB0D2">1-3 示例：</font></h4> <h4 id="函数提升"><a href="#函数提升" class="header-anchor">#</a> 函数提升</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>test();
+function test() {
+    console.log(1);
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>1</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+说明函数提升的优先级比变量提升高，test();不管写在哪里都可以执行。其变形为：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 函数提升
+function test() {  // test =&gt; f
+    console.log(1);
+}
+test();  // 执行函数
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><blockquote><h4 id="_1-4-1-示例："><a href="#_1-4-1-示例：" class="header-anchor">#</a> <font color="#8BB0D2">1-4-1 示例：</font></h4> <h4 id="函数提升和变量提升混合"><a href="#函数提升和变量提升混合" class="header-anchor">#</a> 函数提升和变量提升混合</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>function test() {
+    console.log(1);
+}
+var test = 2;
+console.log(test);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>2</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br> <font color="#EB563B">注意：函数提升要比变量提升的优先级要高一些，且不会被变量声明覆盖，但是会被变量赋值之后覆盖。</font> <br>
+test函数先被提升，然后再被赋值，此时不存在test函数了，然后再进行变量提升，将var test提升到上面，其变形是：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 函数提升
+function test() {  // test =&gt; f
+    console.log(1);
+}
+var test;  // 变量被提升到上面
+test = 2;  // 被提升的函数会被变量赋值之后覆盖
+console.log(test);  // 2
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><blockquote><h4 id="_1-4-2-示例："><a href="#_1-4-2-示例：" class="header-anchor">#</a> <font color="#8BB0D2">1-4-2 示例：</font></h4> <h4 id="函数提升和变量提升混合-2"><a href="#函数提升和变量提升混合-2" class="header-anchor">#</a> 函数提升和变量提升混合</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>function test() {
+    console.log(1);
+}
+var test;
+console.log(test);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>ƒ test() {
+console.log(1);
+}</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+此时var test;时，test值为undefind，undefind变量会被自动忽略，其变形是：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 函数提升
+function test() {  // test =&gt; f
+    console.log(1);
+}
+var test;  // undefind（被自动忽略）
+console.log(test);  // test =&gt; f
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><blockquote><h4 id="_1-4-3-示例："><a href="#_1-4-3-示例：" class="header-anchor">#</a> <font color="#8BB0D2">1-4-3 示例：</font></h4> <h4 id="函数提升和变量提升混合-3"><a href="#函数提升和变量提升混合-3" class="header-anchor">#</a> 函数提升和变量提升混合</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>var test = 2;
+function test() {
+    console.log(1);
+}
+console.log(test);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>2</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+函数提升优先于变量提升，被提升的函数会被变量赋值之后覆盖，其变形为：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 函数提升（函数提升优先级比变量提升高）
+function test() {  // test =&gt; f
+    console.log(1);
+}
+var test;  // 变量被提升到上面
+test = 2;  // 被提升的函数会被变量赋值之后覆盖
+console.log(test);  // 2
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><blockquote><h4 id="_1-5-表达式中的提升（深度扩展）"><a href="#_1-5-表达式中的提升（深度扩展）" class="header-anchor">#</a> <font color="#D9462F">1-5 表达式中的提升（深度扩展）</font></h4></blockquote> <p><strong><font color="#f00">表达式声明的函数注意事项：</font></strong></p> <ul><li>表达式声明的函数只能在内部访问</li> <li>表达式声明的函数无法被重写</li></ul> <blockquote><h4 id="_1-5-1示例："><a href="#_1-5-1示例：" class="header-anchor">#</a> <font color="#8BB0D2">1-5-1示例：</font></h4> <h4 id="表达式中的提升"><a href="#表达式中的提升" class="header-anchor">#</a> 表达式中的提升</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>var test = function test() {
+    
+}
+
+console.log(test);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>ƒ test() {
+}</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+变量提升，将f(test)赋值给test变量，其变形为：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var test;
+test = function test() {
+    
+}
+
+console.log(test);  // test =&gt; f
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><blockquote><h4 id="_1-5-2-示例："><a href="#_1-5-2-示例：" class="header-anchor">#</a> <font color="#8BB0D2">1-5-2 示例：</font></h4> <h4 id="自执行函数"><a href="#自执行函数" class="header-anchor">#</a> 自执行函数</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>(function test() {
+    
+})();
+
+console.log(test);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>test is not defind</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+自执行函数无法提升到外部，所以找不到test方法</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>(function test() {
+    // 只能在内部进行访问
+})();
+
+console.log(test);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><blockquote><h4 id="_1-5-3-示例："><a href="#_1-5-3-示例：" class="header-anchor">#</a> <font color="#8BB0D2">1-5-3 示例：</font></h4> <h4 id="表达式中的提升-2"><a href="#表达式中的提升-2" class="header-anchor">#</a> 表达式中的提升</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>var q = function test() {
+    console.log(&quot;aaa&quot;, test);
+};
+
+q();
+console.log(test);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><ol><li>第一次输出：<br>
+aaa <br>
+ƒ test() {
+console.log(&quot;aaa&quot;, test);
+}</li> <li>第二次输出：<br>
+undefined</li></ol></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+这里存在变量提升，且表达式声明的函数只能在内部进行访问，其变形为：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var q;
+q = function test() {
+    // 这里的test即当前方法地方法体
+    console.log(&quot;aaa&quot;, test);
+};
+
+q();  // 执行q方法
+// 在外部拿不到表达式中声明的函数的方法体
+console.log(test);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><blockquote><h4 id="_1-5-4-示例："><a href="#_1-5-4-示例：" class="header-anchor">#</a> <font color="#8BB0D2">1-5-4 示例：</font></h4> <h4 id="表达式中的提升-3"><a href="#表达式中的提升-3" class="header-anchor">#</a> 表达式中的提升</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>var q = function test() {
+    test = 1;
+
+    console.log(&quot;aaa&quot;, typeof test);
+};
+
+q();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>aaa <br>
+function</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+这里存在变量提升，且表达式声明的函数只能在内部进行访问，并且无法进行重写，其变形为：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var q;
+q = function test() {
+    // test只能在内部进行访问
+    // test无法被重写
+    test = 1;
+
+    // aaa function
+    console.log(&quot;aaa&quot;, typeof test);  
+};
+q();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><blockquote><h4 id="_1-6-变量提升中的null和undefind"><a href="#_1-6-变量提升中的null和undefind" class="header-anchor">#</a> <font color="#8BB0D2">1-6 变量提升中的null和undefind</font></h4></blockquote> <p><strong><font color="#f00">变量提升中的null和undefind注意事项：</font></strong></p> <ul><li>系统的undefind会被自动忽略</li> <li>自己定义的undefind和null有意义</li></ul> <blockquote><h4 id="_1-6-1-示例："><a href="#_1-6-1-示例：" class="header-anchor">#</a> <font color="#8BB0D2">1-6-1 示例：</font></h4> <h4 id="变量提升中的null和undefind"><a href="#变量提升中的null和undefind" class="header-anchor">#</a> 变量提升中的null和undefind</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>function test() {
+    
+}
+
+var test;
+console.log(test);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>ƒ test() {}</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+此时var test;时，test值为undefind，undefind变量会被自动忽略，其变形是：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 函数提升
+function test() {  // test =&gt; f
+    
+}
+var test;  // undefind（被自动忽略）
+console.log(test);  // test =&gt; f
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><blockquote><h4 id="_1-6-2-示例："><a href="#_1-6-2-示例：" class="header-anchor">#</a> <font color="#8BB0D2">1-6-2 示例：</font></h4> <h4 id="变量提升中的null和undefind-2"><a href="#变量提升中的null和undefind-2" class="header-anchor">#</a> 变量提升中的null和undefind</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>function test() {
+    
+}
+
+var test = null;
+console.log(test);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>null</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+只要你给他赋了值，它都是有意义的，其变形是：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var test;
+function test() {
+    
+}
+
+test = null;
+console.log(test);  // null
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><blockquote><h4 id="_1-6-3-示例："><a href="#_1-6-3-示例：" class="header-anchor">#</a> <font color="#8BB0D2">1-6-3 示例：</font></h4> <h4 id="变量提升中的null和undefind-3"><a href="#变量提升中的null和undefind-3" class="header-anchor">#</a> 变量提升中的null和undefind</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>function test() {
+    
+}
+
+var test = undefind;
+console.log(test);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>undefind</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+只要你给他赋了值，它都是有意义的，其变形是：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var test;
+function test() {
+    
+}
+
+test = undefind;
+console.log(test);  // undefind
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><hr> <br> <blockquote><h3 id="_2-请写出如下输出值，并写出把注释调的代码取消注释的值，并解释为什么"><a href="#_2-请写出如下输出值，并写出把注释调的代码取消注释的值，并解释为什么" class="header-anchor">#</a> 2. 请写出如下输出值，并写出把注释调的代码取消注释的值，并解释为什么?</h3></blockquote> <p><strong><font color="#666">原题：</font></strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.a = 20;
+
+var test = {
+    a: 40,
+    
+    init: ()=&gt; {
+        console.log(this.a);
+        function go() {
+            // this.a = 60
+
+            console.log(this.a);
+        }
+
+        go.prototype.a = 50;
+
+        return go;
+    }
+}
+
+// var p = test.init();
+// p();
+new(test.init())();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><p><strong><font color="#666">考点：</font></strong></p> <blockquote><p>this指向</p></blockquote> <p><strong><font color="#666">答案：</font></strong></p> <blockquote><ul><li>未取消注释时:</li></ul> <ol><li>第一次输出： <br>
+20</li> <li>第二次输出： <br>
+50</li></ol> <ul><li>取消注释时：</li></ul> <ol><li>第一次输出： <br>
+20</li> <li>第二次输出： <br>
+60</li> <li>第三次输出： <br>
+60</li> <li>第四次输出： <br>
+60</li></ol></blockquote> <p><strong><font color="#666">解析：</font></strong> <br>
+未取消注释时:</p> <ul><li><code>test.init();</code>的方法中，init是箭头函数的方法，箭头函数中的this是在定义函数的时候绑定的，即箭头函数的this是他父级的this，即箭头函数本身与init平级，也就是箭头函数本身所在的对象为test，而test的父执行上下文就是window，所以this指向在全局中，全局中的this是20</li> <li>假使<code>var result = test.init();</code>，<code>new result();</code>中，new的时候，this就会指向new出来的对象，而在new出来的对象中，构造方法的this优先级要大于原型链，但在init方法中没有构造方法，所以，在new的时候，它的this指向的是被实例化的result()本身，即test.init()本身，所以它的最终值为被实例化后的test.init()中的被挂载在原型链上的值，50</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.a = 20;
+
+var test = {
+    a: 40,
+    
+    init: ()=&gt; {
+        console.log(this.a);
+        
+        function go() {
+            console.log(this.a);
+        }
+
+        go.prototype.a = 50;
+
+        return go;
+    }
+}
+
+// 20 、50
+new(test.init())();
+
+/*
+    new(test.init())();
+    相当于
+    var result = test.init();
+    new result();
+*/
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div><p>取消注释时：</p> <ul><li>第一步同上。</li> <li>第二步，因为<code>var p = test.init();</code>执行test.init返回go函数，所以<code>p();</code>的this指向在go上，又由于函数中的this执行的构造函数的优先级大于原型链，所以这里是60。</li> <li><code>test.init()</code>返回的是go，所以this执行是go，优先级同上， 所以是60。</li> <li>实例化指向被new出来的对象是go，优先级同上，所以是60</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.a = 20;
+
+var test = {
+    a: 40,
+    
+    init: ()=&gt; {
+        console.log(this.a);
+        function go() {
+            this.a = 60
+
+            console.log(this.a);
+        }
+
+        go.prototype.a = 50;
+
+        return go;
+    }
+}
+
+var p = test.init();  // 20
+p();  // 60
+new(test.init())();  // 60、60
+
+/*
+    new(test.init())();
+    相当于
+    var result = test.init();
+    new result();
+*/
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br></div></div><p><strong><font color="#f00">this指向注意事项：</font></strong></p> <ul><li>this，谁调用指谁</li> <li>构造函数的优先级(访问权限) &gt; 原型链</li> <li>new的时候，this就会指向new出来的对象</li> <li>箭头函数
+<ul><li>箭头函数相当于bind，会改变this的指向</li> <li>箭头函数的this是他父级的this</li> <li>箭头函数把this固定到他父级的同级作用</li></ul></li> <li>能改变this指向的关键词
+<ul><li>bind</li> <li>apply</li> <li>call</li></ul></li> <li>一般函数this指向在执行的时候绑定</li> <li>箭头函数中的this是在定义函数的时候绑定</li> <li>严格模式
+<ul><li>非严格模式下默认指向window，</li> <li>严格模式下传null指向null，不传或者传undefined都指向undefined，即在严格模式下，没有写执行主体，this指向是undefined。</li></ul></li></ul> <p><strong><font color="#666">扩展：</font></strong></p> <blockquote><h4 id="_2-1-示例："><a href="#_2-1-示例：" class="header-anchor">#</a> <font color="#8BB0D2">2-1 示例：</font></h4> <h4 id="this指向"><a href="#this指向" class="header-anchor">#</a> this指向</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.a = 20;
+function test() {
+    console.log(this.a);
+}
+
+test();  
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>20</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+谁调用指向谁，这里指window，即全局：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.a = 20;
+function test() {
+    console.log(this.a);
+}
+
+// 相当于window.test();  window调用，指向window
+test();  // 20
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><blockquote><h4 id="_2-2-示例："><a href="#_2-2-示例：" class="header-anchor">#</a> <font color="#8BB0D2">2-2 示例：</font></h4> <h4 id="this指向-2"><a href="#this指向-2" class="header-anchor">#</a> this指向</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.a = 20;
+var test = {
+    a: 40,
+    init: function () {
+        console.log(this.a);
+    }
+}
+
+test.init();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>40</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+test调用init方法，this指向test：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.a = 20;
+var test = {
+    a: 40,
+    init: function () {
+        console.log(this.a);
+    }
+}
+
+// test调用init方法，this指向test
+test.init();  // 40
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><blockquote><h4 id="_2-3-示例："><a href="#_2-3-示例：" class="header-anchor">#</a> <font color="#8BB0D2">2-3 示例：</font></h4> <h4 id="this指向-3"><a href="#this指向-3" class="header-anchor">#</a> this指向</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.a = 20;
+var test = {
+    a: 40,
+    init: function () {
+        console.log(this.a);
+    }
+}
+
+var fn = test.init;
+fn();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>20</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+相当于window.fn，这里的this指向window：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.a = 20;
+var test = {
+    a: 40,
+    init: function () {
+        console.log(this.a);
+    }
+}
+
+var fn = test.init;
+// 相当于window.fn，这里的this指向window
+fn();  // 20
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><blockquote><h4 id="_2-4-示例："><a href="#_2-4-示例：" class="header-anchor">#</a> <font color="#8BB0D2">2-4 示例：</font></h4> <h4 id="this指向-4"><a href="#this指向-4" class="header-anchor">#</a> this指向</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.a = 20;
+var test = {
+    a: 40,
+    init: function () {
+        function go() {
+            console.log(this.a);
+        }
+
+        go();
+    }
+}
+
+test.init();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>20</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+没有人调用go，相当于window.go，this指全局</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.a = 20;
+var test = {
+    a: 40,
+    init: function () {
+        function go() {
+            console.log(this.a);
+        }
+
+        // 相当于window.go
+        go();  // 20
+    }
+}
+
+test.init();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><blockquote><h4 id="_2-5-示例："><a href="#_2-5-示例：" class="header-anchor">#</a> <font color="#8BB0D2">2-5 示例：</font></h4> <h4 id="this指向优先级"><a href="#this指向优先级" class="header-anchor">#</a> this指向优先级</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.a = 20;
+var test = {
+    a: 40,
+    init: function () {
+        function go() {
+            this.a = 50;
+        }
+
+        go.prototype.a = 60;
+
+        console.log((new go()).a);
+    }
+}
+
+test.init();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>50</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+构造函数的优先级(访问权限) &gt; 原型链，并且用new调用go，this就指向实例，此时的this指向就是go，而构造方法的this指向优先级高，所以a就是在go的实例的构造方法中的值。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.a = 20;
+var test = {
+    a: 40,
+    
+    // 构造函数的优先级(访问权限) &gt; 原型链
+    init: function () {
+        // 构造方法
+        function go() {
+            this.a = 50;
+        }
+
+        // 原型链
+        go.prototype.a = 60;
+
+        // new的时候，this就会指向new出来的对象
+        // 用new调go，this就指向实例
+        console.log((new go()).a);
+    }
+}
+
+test.init();  // 50
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><blockquote><h4 id="_2-6-示例："><a href="#_2-6-示例：" class="header-anchor">#</a> <font color="#8BB0D2">2-6 示例：</font></h4> <h4 id="箭头函数中的this指向"><a href="#箭头函数中的this指向" class="header-anchor">#</a> 箭头函数中的this指向</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.a = 20;
+var test = {
+    a: 40,
+
+    init: () =&gt; {
+        console.log(this.a);
+    }
+}
+
+test.init();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>20</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br> <font color="#EB563B">注意：箭头函数中的this是在定义函数的时候绑定，而不是在执行函数的时候绑定，所谓的定义时候绑定，就是this是继承自父执行上下文！！</font> <br>
+箭头函数相当于bind，会改变this的指向，它把这个this固定到他父级的同级作用域中了，即箭头函数本身与init平级，也就是箭头函数本身所在的对象为test，而test的父执行上下文就是window，所以this指向在全局中。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.a = 20;
+var test = {
+    a: 40,
+    /**
+     * 箭头函数相当于bind，会改变this的指向
+     * 箭头函数的this是他父级的this
+     * 箭头函数把this固定到他父级的同级作用域去
+     */
+    init: () =&gt; {
+        console.log(this.a);
+    }
+}
+
+test.init();  // 20
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><blockquote><h4 id="_2-7-示例："><a href="#_2-7-示例：" class="header-anchor">#</a> <font color="#8BB0D2">2-7 示例：</font></h4> <h4 id="全局this指向中的length"><a href="#全局this指向中的length" class="header-anchor">#</a> 全局this指向中的length</h4></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>function fn() {
+    console.log(this.length);
+}
+
+fn();  // iframe数量
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><strong><font color="#8BB0D2">答案：</font></strong></p> <blockquote><p>0</p></blockquote> <p><strong><font color="#8BB0D2">解析：</font></strong> <br>
+在全局中，this的length指的是iframe的数量</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function fn() {
+    console.log(this.length);
+}
+
+fn();  // 0 =&gt; iframe数量
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/zmx2321/blog/edit/master/docs/demo1/demo1-2.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2020-1-18 11:36:06 AM</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.66251581.js" defer></script><script src="/blog/assets/js/2.67ff77f8.js" defer></script><script src="/blog/assets/js/7.0ae978ca.js" defer></script>
+  </body>
+</html>
