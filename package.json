@@ -1,0 +1,26 @@
+{
+  "name": "blog-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "deploy": "bash deploy.sh",
+    "main": "bash main.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zmx2321/blog-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zmx2321/blog/issues"
+  },
+  "homepage": "https://github.com/zmx2321/blog#readme",
+  "devDependencies": {
+    "vuepress": "^1.2.0"
+  }
+}
