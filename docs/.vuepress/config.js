@@ -16,7 +16,7 @@ module.exports = {
     ['link', { rel: 'icon', href: '/favicon.ico' }],
   ],
   // 部署到github相关的配置
-  base: '/blog_empty/',
+  base: '/blog/',
   markdown: {
     // 代码块显示行号
     lineNumbers: true

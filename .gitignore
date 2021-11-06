@@ -4,3 +4,4 @@ node_modules/
 docs/.vuepress/dist/
 # docs/.vuepress/theme/
 docs/.DS_Store
+.idea
